@@ -6,8 +6,8 @@ const TextFieldGroup = ({ field, value, label, error, type, onChange }) => {
 		<div className={classnames("form-group", { 'has-error': error })}>
 			<label className="control-label">{label}</label>
 				<input 
-					value={value}
 					onChange={onChange}
+					value={value}
 					type={type}
 					name={field}
 					className="form-control"
